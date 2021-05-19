@@ -88,7 +88,6 @@ int main()
 				{
 					case 1:
 						{
-							tipo1++;
 							precio_servicio = 60;
 						}break;
 					case 2:
@@ -130,9 +129,12 @@ int main()
 				//acumulando importe neto
 				total_neto4 += importe_neto;
 				
-				//acumulñato neto tipo1
-				if (servicio == 1)
+				//acumulando neto y contando de tipo 1
+				if (tipo_cliente == 1)
+				{
+					tipo1++;
 					servi1_neto += importe_neto;
+				}
 				
 				cout<<"El importe bruto es: "<<importe_bruto<<endl;
 				cout<<"EL monto de descuento es: "<<monto_descuento<<endl;
