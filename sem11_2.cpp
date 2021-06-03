@@ -65,8 +65,6 @@ void procesar()
 			cout<<"ERROR... Ingrese nuevamente (A B C D)"<<endl;
 	}while(prod != 'A' and prod != 'B' and prod != 'C' and prod != 'D');
 	
-	descuento();
-	
 	do{
 		cout<<"\n¿Cuantos "<<producto<<" va a llevar?: ";
 		cin>>cant;
@@ -80,6 +78,8 @@ void procesar()
 		if (precio <= 0)
 			cout<<"ERROR... Vuelva a ingresar (>0).."<<endl;
 	}while(precio <= 0);
+	
+	descuento();
 	
 	monto_bruto = cant * precio;
 	monto_descuento = monto_bruto * desc;
